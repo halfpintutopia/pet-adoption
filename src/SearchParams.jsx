@@ -51,6 +51,7 @@ const SearchParams = () => {
               setAnimal(e.target.value);
               setBreed("");
             }}
+            key={animal.id}
           >
             <option />
             {ANIMALS.map((animal) => (
@@ -67,6 +68,7 @@ const SearchParams = () => {
             onChange={(e) => {
               setBreed(e.target.value);
             }}
+            key={breed.id}
           >
             <option />
             {breeds.map((breed) => (
